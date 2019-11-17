@@ -16,9 +16,10 @@ public class Controller {
     @FXML
     private TextField field;
 
-    Canvas canvas = new Canvas();
+    
 
     public void onClickMethod(ActionEvent actionEvent) {
+        Canvas canvas = new Canvas();
         canvas.setWidth(500);
         canvas.setHeight(442);
         GraphicsContext gr = canvas.getGraphicsContext2D();
