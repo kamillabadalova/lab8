@@ -5,4 +5,4 @@
 <AnchorPane fx:id="anchor" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab8.Controller">
       <Button fx:id="button"  prefWidth="89" prefHeight="39"  layoutX="401.0" layoutY="447.0" mnemonicParsing="false" onAction="#onClickMethod" text="Рисовать" />
       <TextField fx:id="field" layoutX="110.0" layoutY="447.0" prefHeight="39.0" prefWidth="280.0" />
-</AnchorPane> 
+</AnchorPane>  
