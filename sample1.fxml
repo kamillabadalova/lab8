@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab8.Controller1">
+   <children>
+      <TabPane layoutY="-2.0" prefHeight="393.0" prefWidth="708.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Линия">
+            <content>
+              <AnchorPane fx:id="anchor" minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="675.0">
+                     <children>
+                        <Label layoutX="553.0" layoutY="7.0" text="Начало" />
+                        <Label layoutX="558.0" layoutY="37.0" text="х" />
+                        <Label layoutX="558.0" layoutY="87.0" text="у" />
+                        <Label layoutX="553.0" layoutY="123.0" text="Конец" />
+                        <Label layoutX="558.0" layoutY="161.0" text="х" />
+                        <Label layoutX="558.0" layoutY="205.0" text="у" />
+                        <TextField fx:id="fieldstartx" layoutX="603.0" layoutY="34.0" prefHeight="10.0" prefWidth="91.0" />
+                        <TextField fx:id="fieldstarty" layoutX="603.0" layoutY="84.0" prefHeight="10.0" prefWidth="91.0" />
+                         <TextField fx:id="fieldendx" layoutX="603.0" layoutY="155.0" prefHeight="10.0" prefWidth="91.0" />
+                        <TextField fx:id="fieldendy" layoutX="603.0" layoutY="202.0" prefHeight="10.0" prefWidth="91.0" />
+                        <Button fx:id="btn" layoutX="598.0" layoutY="330.0" mnemonicParsing="false" onAction="#onClickLine" prefHeight="30" prefWidth="99" text="Рисовать" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Прямоугольник">
+            <content>
+              <AnchorPane fx:id="anchor1" minHeight="0.0" minWidth="0.0" prefHeight="348.0" prefWidth="679.0">
+                     <children>
+                         <Label layoutX="553.0" layoutY="7.0" text="Начало" />
+                         <Label layoutX="558.0" layoutY="37.0" text="х" />
+                         <Label layoutX="558.0" layoutY="87.0" text="у" />
+                         <Label layoutX="553.0" layoutY="123.0" text="Конец" />
+                         <Label layoutX="558.0" layoutY="161.0" text="х" />
+                         <Label layoutX="558.0" layoutY="205.0" text="у" />
+                         <TextField fx:id="fieldstartx1" layoutX="603.0" layoutY="34.0" prefHeight="10.0" prefWidth="91.0" />
+                         <TextField fx:id="fieldstarty1" layoutX="603.0" layoutY="84.0" prefHeight="10.0" prefWidth="91.0" />
+                         <TextField fx:id="fieldendx1" layoutX="603.0" layoutY="155.0" prefHeight="10.0" prefWidth="91.0" />
+                         <TextField fx:id="fieldendy1" layoutX="603.0" layoutY="202.0" prefHeight="10.0" prefWidth="91.0" />
+                         <Button fx:id="btn1" layoutX="598.0" layoutY="330.0" mnemonicParsing="false" onAction="#onClickRect" prefHeight="30" prefWidth="99" text="Рисовать" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Эллипс">
+               <content>
+                  <AnchorPane fx:id="anchor2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                         <Button fx:id="btn2" layoutX="598.0" layoutY="330.0" mnemonicParsing="false" onAction="#onClickEllips" prefHeight="30" prefWidth="99" text="Рисовать" />
+                         <Label layoutX="553.0" layoutY="7.0" text="Начало" />
+                         <Label layoutX="558.0" layoutY="37.0" text="х" />
+                         <Label layoutX="558.0" layoutY="87.0" text="у" />
+                         <Label layoutX="553.0" layoutY="123.0" text="Конец" />
+                         <Label layoutX="558.0" layoutY="161.0" text="х" />
+                         <Label layoutX="558.0" layoutY="205.0" text="у" />
+                         <TextField fx:id="fieldstartx2" layoutX="603.0" layoutY="34.0" prefHeight="10.0" prefWidth="91.0" />
+                         <TextField fx:id="fieldstarty2" layoutX="603.0" layoutY="84.0" prefHeight="10.0" prefWidth="91.0" />
+                         <TextField fx:id="fieldendx2" layoutX="603.0" layoutY="155.0" prefHeight="10.0" prefWidth="91.0" />
+                         <TextField fx:id="fieldendy2" layoutX="603.0" layoutY="202.0" prefHeight="10.0" prefWidth="91.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Треугольник">
+               <content>
+                  <AnchorPane fx:id="anchor3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                         <TextField fx:id="field1" layoutX="481.0" layoutY="50.0" prefHeight="39.0" prefWidth="64.0" />
+                         <TextField fx:id="field2" layoutX="562.0" layoutY="50.0" prefHeight="39.0" prefWidth="64.0" />
+                         <TextField fx:id="field3" layoutX="637.0" layoutY="50.0" prefHeight="39.0" prefWidth="64.0" />
+                         <Button fx:id="btn3" layoutX="598.0" layoutY="330.0" mnemonicParsing="false" onAction="#onClickPolygon" prefHeight="30" prefWidth="99" text="Рисовать" />
+                         <Label layoutX="553.0" layoutY="7.0" text="Начало" />
+                         <Label layoutX="553.0" layoutY="123.0" text="Конец" />
+                         <TextField fx:id="field4" layoutX="481.0" layoutY="168.0" prefHeight="39.0" prefWidth="64.0" />
+                        <TextField fx:id="field5" layoutX="559.0" layoutY="168.0" prefHeight="39.0" prefWidth="64.0" />
+                        <TextField fx:id="field6" layoutX="639.0" layoutY="168.0" prefHeight="39.0" prefWidth="64.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
